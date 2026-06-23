@@ -5,26 +5,24 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Гедвина Елена Александровна — семейный юрист</title>
 
+<!-- ШРИФТЫ -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
+
 <style>
+
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
     background: #f5f1ea;
     color: #2b2b2b;
+    font-family: "Inter", sans-serif;
 }
 
-/* HERO */
+/* HEADER */
 header {
     background: linear-gradient(135deg, #e7dccb, #f5f1ea);
     text-align: center;
     padding: 70px 20px;
     border-bottom: 1px solid #e0d6c7;
-}
-
-.photo {
-    width: 150px;
-    height: 150px;
-    margin: 0 auto 20px;
 }
 
 .photo img {
@@ -37,9 +35,9 @@ header {
 }
 
 h1 {
-    font-size: 30px;
-    margin: 10px 0;
-    color: #2b2b2b;
+    font-family: "Playfair Display", serif;
+    font-size: 34px;
+    margin: 15px 0 5px;
 }
 
 .subtitle {
@@ -60,8 +58,7 @@ h1 {
     margin: 6px;
     border-radius: 10px;
     text-decoration: none;
-    font-weight: bold;
-    transition: 0.2s;
+    font-weight: 600;
 }
 
 .call {
@@ -69,35 +66,9 @@ h1 {
     color: white;
 }
 
-.call:hover {
-    background: #a48667;
-}
-
 .telegram {
     background: #d6c7b2;
     color: #2b2b2b;
-}
-
-.telegram:hover {
-    background: #cbb89f;
-}
-
-/* SOCIAL */
-.socials {
-    margin-top: 20px;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 10px;
-}
-
-.socials a {
-    background: #fff;
-    color: #2b2b2b;
-    padding: 10px 14px;
-    border-radius: 10px;
-    text-decoration: none;
-    border: 1px solid #e0d6c7;
 }
 
 /* SECTIONS */
@@ -110,7 +81,8 @@ section {
 h2 {
     text-align: center;
     margin-bottom: 30px;
-    color: #2b2b2b;
+    font-family: "Playfair Display", serif;
+    font-size: 28px;
 }
 
 /* CARDS */
@@ -121,7 +93,7 @@ h2 {
 }
 
 .card {
-    background: #ffffff;
+    background: #fff;
     border: 1px solid #e6dccd;
     padding: 20px;
     border-radius: 14px;
@@ -130,8 +102,22 @@ h2 {
 }
 
 .card:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+    transform: translateY(-4px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.08);
+}
+
+/* WHY BLOCK */
+.why-text {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 1.7;
+    color: #4b443c;
+}
+
+.highlight {
+    font-weight: 600;
+    color: #2b2b2b;
 }
 
 /* FOOTER */
@@ -141,6 +127,7 @@ footer {
     color: #6b6257;
     border-top: 1px solid #e0d6c7;
 }
+
 </style>
 </head>
 
@@ -155,22 +142,16 @@ footer {
     <h1>Гедвина Елена Александровна</h1>
 
     <div class="subtitle">
-        Семейный юрист • Развод • Алименты • Раздел имущества • Наследство
+        Семейный юрист • Развод • Алименты • Наследство
     </div>
 
     <div class="remote">
-        Работаю удалённо по всей России • Онлайн консультации из любого города
+        Работаю удалённо по всей России • Онлайн консультации
     </div>
 
     <a class="btn call" href="tel:+79093839314">Позвонить</a>
     <a class="btn telegram" href="https://t.me/juristgedvina">Telegram</a>
 
-    <div class="socials">
-        <a href="https://max.ru/jurist_gedvina" target="_blank">MAX</a>
-        <a href="https://vk.com/jurist_gedvina" target="_blank">VK</a>
-        <a href="https://www.youtube.com/@jurist_gedvina" target="_blank">YouTube</a>
-        <a href="https://t.me/juristgedvina" target="_blank">Telegram</a>
-    </div>
 </header>
 
 <section>
@@ -180,22 +161,23 @@ footer {
         <div class="card">Алименты</div>
         <div class="card">Раздел имущества</div>
         <div class="card">Споры о детях</div>
-        <div class="card">Лишение родительских прав</div>
-        <div class="card">Судебное сопровождение</div>
-
-        <!-- НАСЛЕДСТВО -->
-        <div class="card">Оформление наследства</div>
+        <div class="card">Наследство</div>
         <div class="card">Наследственные споры</div>
     </div>
 </section>
 
 <section>
-    <h2>Почему выбирают</h2>
-    <div class="cards">
-        <div class="card">Опыт семейных и наследственных дел</div>
-        <div class="card">Работа по всей России</div>
-        <div class="card">Полная конфиденциальность</div>
-        <div class="card">Защита интересов в суде</div>
+    <h2>Почему выбирают меня</h2>
+
+    <div class="why-text">
+        Я специализируюсь на семейных и наследственных делах и помогаю клиентам
+        <span class="highlight">решать сложные юридические ситуации спокойно и без лишних конфликтов.</span><br><br>
+
+        Вы получаете не просто консультацию, а <span class="highlight">полное сопровождение дела — от анализа ситуации до защиты в суде.</span><br><br>
+
+        Работаю <span class="highlight">по всей России дистанционно</span>, что позволяет быстро включаться в дела любого региона.<br><br>
+
+        Моя цель — <span class="highlight">защитить ваши интересы и добиться результата, а не просто вести процесс.</span>
     </div>
 </section>
 
